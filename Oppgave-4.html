@@ -8,7 +8,16 @@
 </head>
 
 <body>
+    <script>
+        let hovedstad = prompt("Gi meg 1 av 3 hovedsteder i Skandinavia");
+        console.log(hovedstad);
 
+        if (hovedstad.toLowerCase() === 'oslo' || hovedstad.toLowerCase() === 'københavn' || hovedstad.toLowerCase() === 'stockholm') {
+            console.log('Det er riktig');
+        } else {
+            console.log('Det var feil');
+        }
+    </script>
 </body>
 
 </html>
