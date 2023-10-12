@@ -8,7 +8,21 @@
 </head>
 
 <body>
+    <script>
+        let alder = parseInt(prompt('Hvor gammel er du?'));
 
+        if (alder < 9) {
+            console.log('Billetten er gratis');
+        } else if (alder >= 9 && alder <= 17) { // Endret && til <=
+            console.log('Billetten koster 20kr');
+        } else if (alder >= 18 && alder <= 65) { // Endret && til <=
+            console.log('Billetten koster 40kr');
+        } else if (alder > 65) {
+            console.log('Billetten koster 20kr');
+        } else {
+            console.log('Alder utenfor gyldig rekkevidde');
+        }
+    </script>
 </body>
 
 </html>
