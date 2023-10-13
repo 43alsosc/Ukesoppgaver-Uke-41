@@ -8,6 +8,38 @@
 </head>
 
 <body>
+    <script>
+        // Oppretter en variabel for poengsum og initialiserer den til 0
+        let poengsum = 0;
+
+        // Spør brukeren om Europas høyeste fjell og sjekker svaret
+        if (prompt('Hva er Europas høyeste fjell?').toLowerCase() === 'elbrus') {
+            console.log('Riktig!'); // Hvis svaret er riktig, skrives det ut 'Riktig!' og øker poengsummen med 1
+            poengsum++;
+        } else {
+            console.log('Feil!'); // Hvis svaret er feil, skrives det ut 'Feil!'
+        }
+
+        // Spør brukeren om året første verdenskrig sluttet og sjekker svaret
+        if (parseInt(prompt('Hvilket år sluttet første verdenskrig?')) === 1918) {
+            console.log('Riktig!'); // Hvis svaret er riktig, skrives det ut 'Riktig!' og øker poengsummen med 1
+            poengsum++;
+        } else {
+            console.log('Feil!'); // Hvis svaret er feil, skrives det ut 'Feil!'
+        }
+
+        // Spør brukeren når Norge ble et fritt land og sjekker svaret
+        if (parseInt(prompt('Når ble Norge et fritt land?')) === 1814) {
+            console.log('Riktig!'); // Hvis svaret er riktig, skrives det ut 'Riktig!' og øker poengsummen med 1
+            poengsum++;
+        } else {
+            console.log('Feil!'); // Hvis svaret er feil, skrives det ut 'Feil!'
+        }
+
+        // Skriver ut totalpoengsummen etter alle spørsmålene er besvart
+        console.log(`Du fikk ${poengsum} poeng!`);
+
+    </script>
 </body>
 
 </html>
